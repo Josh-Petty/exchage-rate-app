@@ -6018,7 +6018,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["autoprefixer", "virtual:e1eecd2746b418fbbb738e09008191a3ed846e2c0786d2bbfc7d36eb4bd6c89e8815d778262c0472795e37031af11b0aec8f89caecf8aab842c8324fe4fef75f#npm:10.4.15"],\
             ["@types/postcss", null],\
             ["browserslist", "npm:4.21.10"],\
-            ["caniuse-lite", "npm:1.0.30001523"],\
+            ["caniuse-lite", "npm:1.0.30001524"],\
             ["fraction.js", "npm:4.2.1"],\
             ["normalize-range", "npm:0.1.2"],\
             ["picocolors", "npm:1.0.0"],\
@@ -6535,7 +6535,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/browserslist-npm-4.21.10-e2170a875b-1e27c0f111.zip/node_modules/browserslist/",\
           "packageDependencies": [\
             ["browserslist", "npm:4.21.10"],\
-            ["caniuse-lite", "npm:1.0.30001523"],\
+            ["caniuse-lite", "npm:1.0.30001524"],\
             ["electron-to-chromium", "npm:1.4.503"],\
             ["node-releases", "npm:2.0.13"],\
             ["update-browserslist-db", "virtual:e2170a875bba2f8fa9e93e47c65f2f250097e101a59d95ea6fd852f32965e8cd6cef3b5662aa7295279d5bc60c9a612ddb8515c7dd1b7e8fb9984dee1823e7d6#npm:1.0.11"]\
@@ -6670,7 +6670,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["caniuse-api", "npm:3.0.0"],\
             ["browserslist", "npm:4.21.10"],\
-            ["caniuse-lite", "npm:1.0.30001523"],\
+            ["caniuse-lite", "npm:1.0.30001524"],\
             ["lodash.memoize", "npm:4.1.2"],\
             ["lodash.uniq", "npm:4.5.0"]\
           ],\
@@ -6678,10 +6678,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["caniuse-lite", [\
-        ["npm:1.0.30001523", {\
-          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001523-2d9f5aa5f4-3a007dc814.zip/node_modules/caniuse-lite/",\
+        ["npm:1.0.30001524", {\
+          "packageLocation": "./.yarn/cache/caniuse-lite-npm-1.0.30001524-412c248e4d-35d662a62f.zip/node_modules/caniuse-lite/",\
           "packageDependencies": [\
-            ["caniuse-lite", "npm:1.0.30001523"]\
+            ["caniuse-lite", "npm:1.0.30001524"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8295,10 +8295,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["es-iterator-helpers", [\
-        ["npm:1.0.13", {\
-          "packageLocation": "./.yarn/cache/es-iterator-helpers-npm-1.0.13-9d38f09ebc-1b08ae7388.zip/node_modules/es-iterator-helpers/",\
+        ["npm:1.0.14", {\
+          "packageLocation": "./.yarn/cache/es-iterator-helpers-npm-1.0.14-d7e6ef7a2b-484ca39838.zip/node_modules/es-iterator-helpers/",\
           "packageDependencies": [\
-            ["es-iterator-helpers", "npm:1.0.13"],\
+            ["es-iterator-helpers", "npm:1.0.14"],\
             ["asynciterator.prototype", "npm:1.0.0"],\
             ["call-bind", "npm:1.0.2"],\
             ["define-properties", "npm:1.2.0"],\
@@ -8712,7 +8712,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["array.prototype.flatmap", "npm:1.3.1"],\
             ["array.prototype.tosorted", "npm:1.1.1"],\
             ["doctrine", "npm:2.1.0"],\
-            ["es-iterator-helpers", "npm:1.0.13"],\
+            ["es-iterator-helpers", "npm:1.0.14"],\
             ["eslint", "npm:8.48.0"],\
             ["estraverse", "npm:5.3.0"],\
             ["jsx-ast-utils", "npm:3.3.5"],\
