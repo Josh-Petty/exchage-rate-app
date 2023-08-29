@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Navbar />
       <Exchange />
-      
+      <Footer />
     </Router>
   );
 }
