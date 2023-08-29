@@ -1,6 +1,13 @@
 #navbarContainer {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+@media (min-width: 900px) {
+  #navbarContainer {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
 
 .navbar-custom {
