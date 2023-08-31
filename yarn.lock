@@ -2248,6 +2248,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kurkle/color@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "@kurkle/color@npm:0.3.2"
+  checksum: 79e97b31f8f6efb28c69d373f94b0c7480226fe8ec95221f518ac998e156444a496727ce47de6d728eb5c3369288e794cba82cae34253deb0d472d3bfe080e49
+  languageName: node
+  linkType: hard
+
 "@leichtgewicht/ip-codec@npm:^2.0.1":
   version: 2.0.4
   resolution: "@leichtgewicht/ip-codec@npm:2.0.4"
@@ -4420,6 +4427,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "chart.js@npm:4.4.0"
+  dependencies:
+    "@kurkle/color": ^0.3.0
+  checksum: 5ee2d99b78608025525b5790af17178fdaa5adc3294e082deba2718029b0496109ba124f1b08dd1e4c8a04d6e842be7f384f2cfe9a11df8d1c6fe884acece52b
+  languageName: node
+  linkType: hard
+
 "check-types@npm:^11.1.1":
   version: 11.2.2
   resolution: "check-types@npm:11.2.2"
@@ -6155,6 +6171,7 @@ __metadata:
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
     bootstrap: ^5.3.1
+    chart.js: ^4.4.0
     jquery: ^3.7.1
     money: ^0.2.0
     react: ^18.2.0

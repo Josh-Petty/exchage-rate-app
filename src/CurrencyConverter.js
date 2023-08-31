@@ -1,5 +1,7 @@
 import React from 'react';
 import fx from 'money';
+import Chart from 'chart.js/auto';
+import { checkStatus, json } from './utils';
 import './CurrencyConverter.css';
 
 let timeout;
@@ -15,6 +17,7 @@ class Converter extends React.Component {
       inverted: 1,
     }
 
+    this.chartRef = React.createRef();
     this.amountChange = this.amountChange.bind(this);
     this.fromChange = this.fromChange.bind(this);
     this.toChange = this.toChange.bind(this);
@@ -28,6 +31,8 @@ class Converter extends React.Component {
     fx.base = this.props.base;
     fx.settings = { from: this.state.from, to: 'EUR' };
     this.convert(this.state.amount, this.state.from, this.state.to);
+
+    this.getHistory();
   }
 
   amountChange (event) {
@@ -52,21 +57,71 @@ class Converter extends React.Component {
   }
 
   fromChange (event) {
-    this.setState({ from: event.target.value });
-    clearTimeout(timeout);
-    timeout = setTimeout(() => { this.convert(this.state.amount, this.state.from, this.state.to), 500 });
+    this.setState({ from: event.target.value }, () => {
+      this.convert(this.state.amount, this.state.from, this.state.to);
+      this.getHistory();
+    });
   }
 
   toChange (event) {
-    this.setState({ to: event.target.value});
-    clearTimeout(timeout);
-    timeout = setTimeout(() => { this.convert(this.state.amount, this.state.from, this.state.to), 500 });
+    this.setState({ to: event.target.value}, () => {
+      this.convert(this.state.amount, this.state.from, this.state.to);
+      this.getHistory();
+    });
   }
 
   convert (amount, from, to) {
     let convertedAmount = fx(parseFloat(amount)).from(from).to(to).toFixed(2);
     let invertedAmount = fx(parseFloat(amount)).from(to).to(from).toFixed(2);
     this.setState({ converted: convertedAmount, inverted: invertedAmount });
+  }
+
+  getHistory () {
+    const startDate = new Date((new Date).getTime() - (30 * 24 * 60 * 60 * 1000)).toISOString().split('T')[0];
+
+    fetch(`https://api.frankfurter.app/${startDate}..?from=${this.state.from}&to=${this.state.to}`)
+      .then(checkStatus)
+      .then(json)
+      .then((data) => {
+        if (data.error) {
+          throw new Error(data.error);
+        }
+
+        const chartDates = Object.keys(data.rates);
+        const chartRates = Object.values(data.rates).map(data => data[this.state.to]);
+        const chartLabel = `${this.state.from}/${this.state.to}`;
+        this.buildChart(chartDates, chartRates, chartLabel);
+      })
+      .catch(error => console.error(error.message));
+  }
+
+  buildChart (dates, rates, label) {
+    const chartRef = this.chartRef.current.getContext("2d");
+
+    if (typeof this.chart !== "undefined") {
+      this.chart.destroy();
+    }
+
+    this.chart = new Chart(this.chartRef.current.getContext("2d"), {
+      type: 'line',
+      data: {
+        labels: dates,
+        datasets: [
+          {
+            label: label,
+            data: rates,
+            fill: false,
+            tension: 0,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        layout: {
+          padding: 20,
+        }
+      }
+    })
   }
 
   render () {
@@ -113,6 +168,9 @@ class Converter extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="chart-container">
+          <canvas ref={this.chartRef} />
         </div>
       </div>
     )

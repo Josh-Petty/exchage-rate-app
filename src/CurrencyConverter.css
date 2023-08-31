@@ -15,22 +15,32 @@
   margin-left: 25px;
   margin-right: 25px;
   margin-top: -125px;
-  margin-bottom: 195px;
+  margin-bottom: 25px;
   min-height: 250px;
   background-color: white;
   border-radius: 10px;
   border: 1px solid #ccc;
 }
 
+.chart-container {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
 @media (min-width: 992px) {
-  .content-container-currency {
+  .content-container-currency, .chart-container {
     margin-left: 300px;
     margin-right: 300px;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-  .content-container-currency {
+  .content-container-currency, .chart-container {
     margin-left: 200px;
     margin-right: 200px;
   }
@@ -44,7 +54,7 @@
 }
 
 @media (max-width: 576px) {
-  .content-container-currency {
+  .content-container-currency, .chart-container {
     margin-bottom: 50px;
   }
 }

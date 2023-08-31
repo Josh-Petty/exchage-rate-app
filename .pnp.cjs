@@ -32,6 +32,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:13.5.0"],\
             ["bootstrap", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:5.3.1"],\
+            ["chart.js", "npm:4.4.0"],\
             ["jquery", "npm:3.7.1"],\
             ["money", "npm:0.2.0"],\
             ["react", "npm:18.2.0"],\
@@ -3965,6 +3966,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@kurkle/color", [\
+        ["npm:0.3.2", {\
+          "packageLocation": "./.yarn/cache/@kurkle-color-npm-0.3.2-98f2086013-79e97b31f8.zip/node_modules/@kurkle/color/",\
+          "packageDependencies": [\
+            ["@kurkle/color", "npm:0.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@leichtgewicht/ip-codec", [\
         ["npm:2.0.4", {\
           "packageLocation": "./.yarn/cache/@leichtgewicht-ip-codec-npm-2.0.4-dd4d657af8-468de1f04d.zip/node_modules/@leichtgewicht/ip-codec/",\
@@ -6744,6 +6754,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["chart.js", [\
+        ["npm:4.4.0", {\
+          "packageLocation": "./.yarn/cache/chart.js-npm-4.4.0-ccf7d4ad14-5ee2d99b78.zip/node_modules/chart.js/",\
+          "packageDependencies": [\
+            ["chart.js", "npm:4.4.0"],\
+            ["@kurkle/color", "npm:0.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["check-types", [\
         ["npm:11.2.2", {\
           "packageLocation": "./.yarn/cache/check-types-npm-11.2.2-1f3d6117bc-61ed60d59e.zip/node_modules/check-types/",\
@@ -8957,6 +8977,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:13.5.0"],\
             ["bootstrap", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:5.3.1"],\
+            ["chart.js", "npm:4.4.0"],\
             ["jquery", "npm:3.7.1"],\
             ["money", "npm:0.2.0"],\
             ["react", "npm:18.2.0"],\
