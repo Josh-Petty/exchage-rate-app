@@ -21,7 +21,7 @@ class Exchange extends React.Component {
           <form className="row">
             <div className="col-6">
               <select className="form-select mx-auto" id="currencySelect" onChange={this.props.handleExchangeChange}>
-                <option defaultValue="USD">USD</option>
+                <option defaultValue={this.props.base}>{this.props.base}</option>
                 {this.props.currencies.map((item, id) => (
                   <option key={id}>{item}</option>
                 ))}

@@ -9,7 +9,7 @@ class Converter extends React.Component {
     super(props);
     this.state = {
       amount: '1.00',
-      from: 'USD',
+      from: this.props.base,
       to: 'EUR',
       converted: 1,
       inverted: 1,
@@ -24,9 +24,9 @@ class Converter extends React.Component {
     this.props.rates.map(item => {
       fx.rates[item[0]] = item[1];
     })
-    fx.rates['USD'] = 1;
-    fx.base = 'USD';
-    fx.settings = { from: 'USD', to: 'EUR' };
+    fx.rates[this.state.from] = 1;
+    fx.base = this.props.base;
+    fx.settings = { from: this.state.from, to: 'EUR' };
     this.convert(this.state.amount, this.state.from, this.state.to);
   }
 
@@ -84,7 +84,7 @@ class Converter extends React.Component {
             <div className="col-12 col-sm-4">
               <h5 className="label pt-3">From</h5>
               <select id="fromSelect" className="form-select label" onChange={this.fromChange}>
-                <option defaultValue="USD">USD</option>
+                <option defaultValue={this.state.from}>{this.state.from}</option>
                 {this.props.currencies.map((item, id) => (
                   <option key={id}>{item}</option>
                 ))}

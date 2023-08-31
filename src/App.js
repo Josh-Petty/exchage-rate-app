@@ -77,7 +77,7 @@ class App extends React.Component {
   
   render () {
 
-    const { rates, currencies } = this.state;
+    const { rates, currencies, base } = this.state;
     
     if (isLoading) {
       return(
@@ -94,10 +94,10 @@ class App extends React.Component {
         <Navbar />
           <Switch>
             <Route path="/" exact>
-              <Exchange rates={rates} currencies={currencies} handleExchangeChange={this.handleExchangeChange} />
+              <Exchange rates={rates} currencies={currencies} base={base} handleExchangeChange={this.handleExchangeChange} />
             </Route>
             <Route path="/converter">
-              <Converter rates={rates} currencies={currencies} />
+              <Converter rates={rates} currencies={currencies} base={base} />
             </Route>
           </Switch>
         <Footer />
