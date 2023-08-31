@@ -91,10 +91,12 @@ class App extends React.Component {
 
     return (
       <Routes>
+        <Navbar />
         <Switch>
-          <Route path="/" element={<Exchange rates={rates} currencies={currencies} handleExchangeChange={this.handleExchangeChange} />} />
+          <Route path="/" exact element={<Exchange rates={rates} currencies={currencies} handleExchangeChange={this.handleExchangeChange} />} />
           <Route path="/converter" element={<Converter rates={rates} currencies={currencies} />} />
         </Switch>
+        <Footer />
       </Routes>
     );
   }
