@@ -11,7 +11,7 @@
   color: white;
 }
 
-.content-container {
+.content-container-currency {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: -125px;
@@ -23,14 +23,14 @@
 }
 
 @media (min-width: 992px) {
-  .content-container {
+  .content-container-currency {
     margin-left: 300px;
     margin-right: 300px;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-  .content-container {
+  .content-container-currency {
     margin-left: 200px;
     margin-right: 200px;
   }
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 576px) {
-  .content-container {
+  .content-container-currency {
     margin-bottom: 50px;
   }
 }
@@ -56,4 +56,12 @@
 .output-container {
   margin-top: 35px;
   padding-left: 12px;
+}
+
+.output-label {
+  color: #888;
+}
+
+.converted-label {
+  color: #457ab1;
 }

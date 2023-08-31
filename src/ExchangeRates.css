@@ -11,11 +11,11 @@
   color: white;
 }
 
-.content-container {
+.content-container-exchange {
   margin-left: 25px;
   margin-right: 25px;
   margin-top: -125px;
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
   min-height: 200px;
   background-color: white;
   border-radius: 10px;
@@ -23,14 +23,14 @@
 }
 
 @media (min-width: 992px) {
-  .content-container {
+  .content-container-exchange {
     margin-left: 300px;
     margin-right: 300px;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-  .content-container {
+  .content-container-exchange {
     margin-left: 200px;
     margin-right: 200px;
   }

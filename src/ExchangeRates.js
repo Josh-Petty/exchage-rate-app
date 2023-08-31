@@ -7,9 +7,9 @@ class Exchange extends React.Component {
     return(
       <div className="container-fluid mx-0 px-0">
         <div className="color-bar">
-          <h3 className="section-title text-center mb-0">Currency Converter</h3>
+          <h3 className="section-title text-center mb-0">Current Exchange Rates</h3>
         </div>
-        <div className="content-container">
+        <div className="content-container-exchange">
           <div className="row">
             <div className="col-6">
               <h5 className="text-center label pt-3 mb-5">Currency</h5>
@@ -20,7 +20,7 @@ class Exchange extends React.Component {
           </div>
           <form className="row">
             <div className="col-6">
-              <select className="form-select mx-auto" id="currencySelect" onChange={this.props.handleChange}>
+              <select className="form-select mx-auto" id="currencySelect" onChange={this.props.handleExchangeChange}>
                 <option defaultValue="USD">USD</option>
                 {this.props.currencies.map((item, id) => (
                   <option key={id}>{item}</option>

@@ -75,7 +75,7 @@ class Converter extends React.Component {
         <div className="color-bar">
           <h3 className="section-title text-center mb-0">Currency Converter</h3>
         </div>
-        <div className="content-container">
+        <div className="content-container-currency">
           <div className="row mx-0 label-row">
             <div className="col-12 col-sm-4">
               <h5 className="label pt-3">Amount</h5>
@@ -103,13 +103,13 @@ class Converter extends React.Component {
           <div className="output-container">
             <div className="row">
               <div className="col-12">
-                <h5>{this.state.amount} {this.state.from} =</h5>
+                <h5 className="output-label">{this.state.amount} {this.state.from} =</h5>
               </div>
               <div className="col-12">
-                <h3>{this.state.converted} {this.state.to}</h3>
+                <h3 className="converted-label">{this.state.converted} {this.state.to}</h3>
               </div>
               <div className="col-12">
-                <h5>{this.state.amount} {this.state.to} = {this.state.inverted} {this.state.from}</h5>
+                <h5 className="output-label">{this.state.amount} {this.state.to} = <span className="converted-label">{this.state.inverted} {this.state.from}</span></h5>
               </div>
             </div>
           </div>
