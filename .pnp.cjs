@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:13.5.0"],\
             ["bootstrap", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:5.3.1"],\
             ["jquery", "npm:3.7.1"],\
+            ["money", "npm:0.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:18.2.0"],\
             ["react-router-dom", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:5.3.4"],\
@@ -8957,6 +8958,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:13.5.0"],\
             ["bootstrap", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:5.3.1"],\
             ["jquery", "npm:3.7.1"],\
+            ["money", "npm:0.2.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:18.2.0"],\
             ["react-router-dom", "virtual:8421369673493828acf7e3ee61444bed6db52241bd46d5473058a43576da8529b37a73d4e5e0bc74b40e9ea5083857c26a9ee529ccd7440e1d974b30ced79d83#npm:5.3.4"],\
@@ -12406,6 +12408,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/mkdirp-npm-1.0.4-37f6ef56b9-a96865108c.zip/node_modules/mkdirp/",\
           "packageDependencies": [\
             ["mkdirp", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["money", [\
+        ["npm:0.2.0", {\
+          "packageLocation": "./.yarn/cache/money-npm-0.2.0-05b9f79c73-e880ccf24e.zip/node_modules/money/",\
+          "packageDependencies": [\
+            ["money", "npm:0.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
